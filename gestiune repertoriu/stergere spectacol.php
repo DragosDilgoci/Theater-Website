@@ -32,7 +32,7 @@ if (isset($_POST['submit3'])) {
     }
     
     // Redirect to the previous page with the message in the URL
-    header("Location: \\Proiect Web\\repertoriu.php?message=" . $message);
+    header("Location: \\Proiect Web\\Theater-Website\\repertoriu.php?message=" . $message);
     exit();
 }
 

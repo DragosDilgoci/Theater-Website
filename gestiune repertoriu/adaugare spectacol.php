@@ -53,13 +53,13 @@ if (isset($_POST['submit1'])) {
     if ($result->num_rows > 0) {
         $message = "Error: Value already exists in the table.";
         // Redirect to the previous page
-        header("Location: \\Proiect Web\\repertoriu.php?message=" . $message);
+        header("Location: \\Proiect Web\\Theater-Website\\repertoriu.php?message=" . $message);
         exit();
     } else {
         // Insert the value into the table
         $insertSql = "INSERT INTO repertoriu (Denumire) VALUES ('$value')";
         if ($conn->query($insertSql) === TRUE) {
-            header("location: \\Proiect Web\\repertoriu.php");
+            header("location: \\Proiect Web\\Theater-Website\\repertoriu.php");
             exit;
         } else {
             echo "Error inserting value: " . $conn->error;

@@ -39,7 +39,7 @@ if ($conn->connect_error) {
 // Assuming the connection code is already present
 
 // SQL query to retrieve data from the "users" table
-$sql = "SELECT Nume, Prenume, Functie FROM echipa";
+$sql = "SELECT Nume, Prenume, Functie FROM echipa order by Functie desc";
 $result = $conn->query($sql);
 
 // Check if any rows were returned
@@ -49,6 +49,7 @@ if ($result->num_rows > 0) {
         echo "<p>Nume: " . $row["Nume"] . "</p>";
         echo "<p>Prenume: " . $row["Prenume"] . "</p>";
         echo "<p>Functie: " . $row["Functie"] . "</p>";
+        echo "--- --- --- ---";
     }
 } else {
     echo "No results found.";
@@ -74,22 +75,30 @@ $conn->close();
   <li><button onclick="toggleTextBox('textBox1')">Arata/Ascunde <br> Buton Adaugare Membru </button>
   <div id="textBox1" class="hidden">
   <form method="POST" action="gestiune echipa/adaugare membru.php">
-    <input type="text" name="value1" placeholder="Scrieți ceva...">
+    <input type="text" name="value1" placeholder="Scrieți numele...">
+    <input type="text" name="value1_1" placeholder="Scrieți prenumele...">
+    <input type="text" name="value1_2" placeholder="Scrieți funcția...">
     <input type="submit" name="submit1" value="Submit">
   </form></li>
 
   <li><button onclick="toggleTextBox('textBox2')">Arata/Ascunde <br> Buton Modificare Membru </button>
   <div id="textBox2" class="hidden">
   <form method="POST" action="gestiune echipa/modificare membru.php">
-    <input type="text" name="value2" placeholder="Scrieți vechiul membru">
-    <input type="text" name="value2_1" placeholder="Scrieți noul membru">
+    <input type="text" name="value2" placeholder="Scrieți vechiul nume">
+    <input type="text" name="value2_1" placeholder="Scrieți vechiul prenume">
+    <input type="text" name="value2_2" placeholder="Scrieți vechea funcție"><br>
+    <input type="text" name="value2_3" placeholder="Scrieți noul nume">
+    <input type="text" name="value2_4" placeholder="Scrieți noul prenume">
+    <input type="text" name="value2_5" placeholder="Scrieți noua funcție">
     <input type="submit" name="submit2" value="Submit">
   </form></li>
 
   <li><button onclick="toggleTextBox('textBox3')">Arata/Ascunde <br> Buton Stergere Membru </button>
   <div id="textBox3" class="hidden">
   <form method="POST" action="gestiune echipa/stergere membru.php">
-    <input type="text" name="value3" placeholder="Scrieți ceva...">
+  <input type="text" name="value3" placeholder="Scrieți numele...">
+    <input type="text" name="value3_1" placeholder="Scrieți prenumele...">
+    <input type="text" name="value3_2" placeholder="Scrieți funcția...">
     <input type="submit" name="submit3" value="Submit">
   </form></li>
       </ul>
