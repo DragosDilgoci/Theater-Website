@@ -1,0 +1,81 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and font styles */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Set styles for the navigation menu */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Set styles for the headings */
+h1, h2 {
+  margin: 20px 0;
+  font-weight: normal;
+}
+
+/* Set styles for the paragraphs */
+p {
+  margin-bottom: 10px;
+}
+
+/* Set styles for the unordered lists */
+ul {
+  margin-bottom: 20px;
+}
+
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Set styles for the images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Set styles for the contact information */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
