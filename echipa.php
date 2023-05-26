@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trupa de Teatru</title>
+  <title>Trupa de Teatru Insiders</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>

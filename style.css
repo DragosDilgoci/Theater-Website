@@ -1,19 +1,11 @@
-/* Reset default styles */
-* {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Set background color and font styles */
-body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: #333;
-}
-
-/* Set styles for the navigation menu */
+/* Navigation Styles */
 nav {
   background-color: #333;
 }
@@ -25,13 +17,13 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
+  display: inline;
 }
 
 nav ul li a {
-  display: block;
-  padding: 10px 20px;
   color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
@@ -39,43 +31,33 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* Set styles for the headings */
-h1, h2 {
-  margin: 20px 0;
-  font-weight: normal;
+/* Heading Styles */
+h1 {
+  text-align: center;
+  margin-top: 30px;
 }
 
-/* Set styles for the paragraphs */
-p {
-  margin-bottom: 10px;
-}
-
-/* Set styles for the unordered lists */
-ul {
-  margin-bottom: 20px;
-}
-
-ul li {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-/* Set styles for the images */
-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Set styles for the contact information */
-.contact-info {
+h2 {
   margin-top: 20px;
 }
 
-.contact-info p {
-  margin-bottom: 5px;
+/* Image Styles */
+/* Image Styles */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-.contact-info p:last-child {
-  margin-bottom: 0;
+.image-container img {
+  width: 640px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
 }

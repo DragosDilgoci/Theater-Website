@@ -1,36 +1,5 @@
 <?php
 
-// $servername = "localhost"; // Replace with your database server name if different
-// $username = "root"; // Replace with your database username
-// $password = ""; // Replace with your database password
-// $dbname = "teatruinsiders"; // Replace with your database name
-
-// // Create a connection
-// $conn = new mysqli($servername, $username, $password, $dbname);
-
-// // Check the connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
-// // Assuming you have established a database connection
-
-// if (isset($_POST['submit1'])) {
-//     $value = $_POST['value1']; // Get the value from the form
-
-//     // Insert the value into the table
-//     $sql = "INSERT INTO repertoriu (Denumire) VALUES ('$value')";
-//     if ($conn->query($sql) === TRUE) {
-//         header("location: \\Proiect Web\\repertoriu.php");
-//         exit;
-        
-//     } else {
-//         echo "Error inserting value: " . $conn->error;
-//     }
-// }
-
-// // Close the connection
-// $conn->close();
-
 $servername = "localhost"; // Replace with your database server name if different
 $username = "root"; // Replace with your database username
 $password = ""; // Replace with your database password

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trupa de Teatru</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <title>Trupa de Teatru Insiders</title>
+  <link rel="stylesheet" style="text/css" href="style.css">
+  </head>
 <body>
   <nav>
     <ul>
@@ -20,9 +20,13 @@
 
   <h2>Galerie</h2>
   <p>Galerie de fotografii din spectacole:</p>
-  <img src="imagini/fotografie1.jpg" alt="Fotografie 1">
-  <img src="imagini/fotografie2.jpg" alt="Fotografie 2">
-  <img src="imagini/fotografie3.jpg" alt="Fotografie 3">
-
+  <div class="image-container">
+  <img src="imagini/p1.jpg" alt="Fotografie 1">
+  <img src="imagini/p2.jpg" alt="Fotografie 2">
+  <img src="imagini/p3.jpg" alt="Fotografie 3">
+  <img src="imagini/p4.jpg" alt="Fotografie 4">
+  <img src="imagini/p5.jpg" alt="Fotografie 5">
+  <img src="imagini/p6.jpg" alt="Fotografie 6">
+</div>
 </body>
 </html>
